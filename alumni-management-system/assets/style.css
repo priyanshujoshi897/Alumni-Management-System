@@ -1,0 +1,203 @@
+/* =========================
+   GLOBAL
+========================= */
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #F8FAFC;
+    color: #1F2937;
+    margin: 0;
+    padding: 0;
+}
+
+/* =========================
+   NAVBAR
+========================= */
+
+.navbar {
+    background-color: #0F172A !important;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+}
+
+.navbar .nav-link {
+    position: relative;
+    font-weight: 500;
+    padding: 10px 15px;
+    color: #CBD5E1 !important;
+    transition: 0.3s ease;
+}
+
+.navbar .nav-link:hover {
+    color: #FFFFFF !important;
+}
+
+.navbar .nav-link::after {
+    content: "";
+    position: absolute;
+    left: 15px;
+    bottom: 4px;
+    width: 0%;
+    height: 2px;
+    background: #6366F1;
+    transition: 0.3s ease;
+}
+
+.navbar .nav-link:hover::after,
+.navbar .nav-link.active::after {
+    width: 60%;
+}
+
+.navbar .nav-link.active {
+    color: #FFFFFF !important;
+}
+
+/* =========================
+   HERO (HOME)
+========================= */
+
+.hero-section {
+    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.5)),
+                url('hero.jpg') center/cover no-repeat;
+    height: 95vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    animation: zoomHero 20s ease-in-out infinite alternate;
+}
+
+@keyframes zoomHero {
+    from { background-size: 100%; }
+    to { background-size: 110%; }
+}
+
+/* =========================
+   ABOUT HERO
+========================= */
+
+.about-hero {
+    position: relative;
+    height: 75vh;
+    background: url('best-about-us-pages.jpg') center/cover no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero-overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(rgba(0,0,0,0.45), rgba(0,0,0,0.25));
+}
+
+.hero-content {
+    position: relative;
+    z-index: 2;
+    text-align: center;
+}
+
+.hero-title {
+    font-size: 3rem;
+    font-weight: 800;
+    color: white;
+    text-shadow: 0 8px 20px rgba(0,0,0,0.6);
+}
+
+.hero-subtitle {
+    font-size: 1.2rem;
+    color: #f1f1f1;
+    margin-top: 20px;
+}
+
+/* =========================
+   SECTIONS
+========================= */
+
+.section-lg {
+    padding: 100px 0;
+}
+
+.bg-soft {
+    background: #f8f5ef;
+}
+
+/* =========================
+   CARDS
+========================= */
+
+.card,
+.benefit-card,
+.spotlight-card {
+    background: white;
+    padding: 30px;
+    border-radius: 18px;
+    box-shadow: 0 15px 35px rgba(0,0,0,0.05);
+    transition: 0.3s ease;
+}
+
+.card:hover,
+.benefit-card:hover,
+.spotlight-card:hover {
+    transform: translateY(-10px);
+}
+
+/* =========================
+   SPOTLIGHT
+========================= */
+
+.spotlight-section {
+    background: linear-gradient(135deg, #0f172a, #1e293b);
+    padding: 120px 0;
+}
+
+.spotlight-avatar {
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, #1e3c72, #2a5298);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 20px;
+    color: white;
+    font-size: 30px;
+}
+
+/* Tirchi effect */
+
+.tilt-left { transform: rotate(-5deg); }
+.tilt-center { transform: rotate(0deg); }
+.tilt-right { transform: rotate(5deg); }
+
+.spotlight-col:hover {
+    transform: rotate(0deg) scale(1.05);
+    transition: 0.4s ease;
+}
+
+/* =========================
+   FOOTER
+========================= */
+
+footer {
+    background: #0F172A;
+    color: #CBD5E1;
+    padding: 20px 0;
+    text-align: center;
+}
+.stats-section {
+  background: #0F172A;
+  padding: 100px 0;
+  color: white;
+  margin-top: 60px;
+  border-radius: 20px;
+}
+/* Fix dropdown above hero */
+.navbar {
+    position: relative;
+    z-index: 9999;
+}
+
+.dropdown-menu {
+    z-index: 9999 !important;
+}

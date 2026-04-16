@@ -24,7 +24,7 @@ This is a web-based Alumni Management System developed using PHP and MySQL.
 6. Run project on localhost
 
 ## 🎥 Demo Video
-Upload soon
+https://youtu.be/mRMCSHUsNeI?si=gOOZpCTZ07qKHreV
 
 ## 👨‍💻 Developed By
 - Priyanshu Joshi & team 
